@@ -46,17 +46,17 @@ public class MainActivity extends AppCompatActivity {
 
         t1 = Typeface.createFromAsset(getAssets(), "fonts/CHINESER.TTF");
 
-        btn = (Button) findViewById(R.id.buttonID);
-        answer = (EditText) findViewById(R.id.asnwerID);
-        one = (TextView) findViewById(R.id.one);
-        two = (TextView) findViewById(R.id.two);
-        sign = (TextView) findViewById(R.id.sign);
-        result = (TextView) findViewById(R.id.winorlose);
-        score = (TextView) findViewById(R.id.scoreID);
-        backBtn = (Button) findViewById(R.id.backBtn);
-        nextTxt = (TextView) findViewById(R.id.nextTxtID);
-        mathTxt = (TextView) findViewById(R.id.textView123);
-        backImg = (ImageView) findViewById(R.id.imageView);
+        btn = findViewById(R.id.buttonID);
+        answer = findViewById(R.id.asnwerID);
+        one = findViewById(R.id.one);
+        two = findViewById(R.id.two);
+        sign = findViewById(R.id.sign);
+        result = findViewById(R.id.winorlose);
+        score = findViewById(R.id.scoreID);
+        backBtn = findViewById(R.id.backBtn);
+        nextTxt = findViewById(R.id.nextTxtID);
+        mathTxt = findViewById(R.id.textView123);
+        backImg = findViewById(R.id.imageView);
         backImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         Random random = new Random();
         int firstNumber;
         int secondNumber;
-        int signsNumber = random.nextInt(4);;
+        int signsNumber = random.nextInt(4);
         if(level.equals("1")) {
              firstNumber = random.nextInt(9);
              secondNumber = random.nextInt(9) + 1;
@@ -187,5 +187,9 @@ public class MainActivity extends AppCompatActivity {
             String sc = prefs.getString("score", "0");
             score.setText("Score: " + sc);
         }
+    }
+
+    public String returnName(){
+        return "Aziz was here";
     }
 }
