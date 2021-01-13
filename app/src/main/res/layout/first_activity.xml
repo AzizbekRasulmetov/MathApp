@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathbg2">
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="356dp"
+        android:background="@drawable/button_gradient"
+        android:text="Start"
+        android:textColor="@color/btnColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_gradient"
+        android:text="About"
+        android:textColor="@color/btn_about"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Quit"
+        android:background="@drawable/button_gradient"
+        android:textColor="	#FF0000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="btnColor">#00CF91</color>
+    <color name="btn_bg">#5BFF62</color>
+    <color name="btn_about">#FFC11E</color>
+    <color name="btn_about_select">#F5E027</color>
+    <color name="btn_quit">#F85C50</color>
+    <color name="btn_quit_select">#FF756B</color>
+</resources>
